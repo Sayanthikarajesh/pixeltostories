@@ -1,0 +1,25 @@
+Image 1:
+Caption: a boy sitting on a bench with a cup of coffee.
+Noun Phrases: ['boy', 'bench', 'cup', 'coffee']
+Relation: ['sitting']
+
+Image 2:
+Caption: this is what happens when you get a car stuck in the mud.
+Noun Phrases: ['car', 'stuck', 'mud']
+Relation: ['is', 'happens', 'get']
+
+Image 3:
+Caption: a brown dog standing on top of a lush green field.
+Noun Phrases: ['dog', 'top', 'field']
+Relation: ['standing']
+
+Image 4:
+Caption: person, left, and battle for the ball.
+Noun Phrases: ['person', 'battle', 'ball']
+Relation: ['left']
+
+Image 5:
+Caption: a man standing on a rocky beach with mountains in the background
+Noun Phrases: ['man', 'beach', 'mountains', 'background']
+Relation: ['standing']
+

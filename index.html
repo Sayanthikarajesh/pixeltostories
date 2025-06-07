@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels2Samples</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <h1>Pixels2Samples</h1>
+            </div>
+            <p class="tagline">Transform your images into stories, captions, and audio narratives</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <form id="upload-form" enctype="multipart/form-data">
+                    <div class="file-input-container">
+                        <label for="file-input" class="file-input-label">
+                            <span class="button-text">Select Images</span>
+                            <span class="info-text">PNG, JPG, JPEG or GIF (Max 16MB)</span>
+                        </label>
+                        <input type="file" id="file-input" name="files[]" accept=".png,.jpg,.jpeg,.gif" multiple>
+                    </div>
+                    
+                    <div id="preview-container" class="preview-container hidden">
+                        <h3>Selected Images</h3>
+                        <div id="image-previews" class="image-previews"></div>
+                    </div>
+                    
+                    <button type="submit" id="generate-button" class="generate-button" disabled>Generate</button>
+                </form>
+            </section>
+            
+            <section id="results-section" class="results-section hidden">
+                <div class="loader hidden" id="loader">
+                    <div class="spinner"></div>
+                    <p>Processing your images...</p>
+                </div>
+                <div id="results-message" class="results-message"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Pixels2Samples</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
